@@ -11,14 +11,12 @@
         android:id="@+id/imageView7"
         android:layout_width="213dp"
         android:layout_height="124dp"
-        android:clipToOutline="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.108"
-        app:srcCompat="@drawable/WIN_20210416_19_02_39_Pro" />
+        app:srcCompat="@drawable/dimitry" />
 
 
 

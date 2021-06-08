@@ -18,9 +18,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pedal360">
-        <activity android:name=".Produtores"></activity>
-        <activity android:name=".ActivityLocate" />
-        <activity android:name=".ActivityPerfil" />
+        <activity
+            android:name=".perfil.Gallery"
+            android:label="@string/title_activity_gallery"
+            android:theme="@style/Theme.Pedal360.NoActionBar" />
+        <activity android:name=".Produtores" />
+        <activity android:name=".alertaslocation.ActivityLocate" />
+        <activity android:name=".perfil.ActivityPerfil" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -43,7 +47,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityAlertas" />
+        <activity android:name=".alertaslocation.ActivityAlertas" />
         <activity android:name=".ActivityPrincipal" />
         <activity android:name=".ActivityLogin" />
         <activity android:name=".ActivityRegister" />

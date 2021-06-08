@@ -51,6 +51,7 @@ dependencies {
     implementation 'com.github.rtoshiro.mflibrary:mflibrary:1.0.0'
     implementation 'com.android.support:multidex:1.0.3'
     implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
 
 
 }
