@@ -19,6 +19,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pedal360">
         <activity
+            android:name=".perfil.Teste"
+            android:label="@string/title_activity_teste"
+            android:theme="@style/Theme.Pedal360.NoActionBar"></activity>
+        <activity android:name=".perfil.Chat" />
+        <activity
             android:name=".perfil.Gallery"
             android:label="@string/title_activity_gallery"
             android:theme="@style/Theme.Pedal360.NoActionBar" />

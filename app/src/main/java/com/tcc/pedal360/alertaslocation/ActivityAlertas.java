@@ -1,10 +1,5 @@
 package com.tcc.pedal360.alertaslocation;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -21,6 +16,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
@@ -151,7 +151,7 @@ public class ActivityAlertas extends AppCompatActivity {
                 latitude = location.getLatitude();
                 longitude = location.getLongitude();
                 SmsManager smsManager = SmsManager.getDefault();
-                smsManager.sendTextMessage(sNumber, null, "https://www.google.com.br/maps/@" + String.valueOf(latitude) + "," + String.valueOf(latitude) + ",17.96z", null, null);
+                smsManager.sendTextMessage(sNumber, null, "https://www.google.com/maps/search/?api=1" + String.valueOf(latitude) + "," + String.valueOf(latitude) + ",17.96z", null, null);
                 //LatLng latLng = new LatLng(latitude, longitude);
                 //MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("Estou aqui");
                 //Toast.makeText(ActivityAlertas.this, "latitude:" + latitude + " longitude:" + longitude, Toast.LENGTH_SHORT).show();

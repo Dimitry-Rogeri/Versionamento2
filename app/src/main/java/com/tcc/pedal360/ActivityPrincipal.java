@@ -1,18 +1,18 @@
 package com.tcc.pedal360;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.tcc.pedal360.alertaslocation.ActivityAlertas;
-import com.tcc.pedal360.alertaslocation.ActivityLocate;
+import com.tcc.pedal360.alertaslocation.ActivityMaps;
 import com.tcc.pedal360.perfil.ActivityPerfil;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -65,7 +65,7 @@ public class ActivityPrincipal extends AppCompatActivity {
     mRotas.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent1 = new Intent(ActivityPrincipal.this, ActivityLocate.class);
+            Intent intent1 = new Intent(ActivityPrincipal.this, ActivityMaps.class);
             startActivity(intent1);
         }
     });
