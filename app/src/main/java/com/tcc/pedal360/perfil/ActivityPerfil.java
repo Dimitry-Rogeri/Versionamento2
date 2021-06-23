@@ -39,14 +39,14 @@ public class ActivityPerfil extends AppCompatActivity {
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         reference    = FirebaseDatabase.getInstance().getReference("users").child(firebaseUser.getUid());
 
-        username = findViewById(R.id.username);
-        profile_image = findViewById(R.id.profile_image);
+       // username = findViewById(R.id.username);
+       // profile_image = findViewById(R.id.profile_image);
 
 
 
         //mFoto = findViewById(R.id.ivFotoPerfil);
-        mEscolher = findViewById(R.id.buttonFoto);
-        mChat = findViewById(R.id.BtnChat);
+        //mEscolher = findViewById(R.id.buttonFoto);
+       // mChat = findViewById(R.id.BtnChat);
 
         mEscolher.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,13 +55,6 @@ public class ActivityPerfil extends AppCompatActivity {
             }
         });
 
-        mChat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityPerfil.this, Teste.class);
-                startActivity(intent);
-            }
-        });
     }
 
     private void openGallery(){

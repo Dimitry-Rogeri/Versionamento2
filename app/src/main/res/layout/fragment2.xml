@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_alertas"
+        android:layout_width="210dp"
+        android:layout_height="187dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textSize="50dp"
+        app:srcCompat="@drawable/ic_baseline_add_alert_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CONFIGURAR ALERTA"
+        android:layout_marginTop="350dp"
+        android:textSize="25sp"
+        android:textColor="@color/purple_500"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartilha"
+        android:layout_centerHorizontal="true"
+        android:text="Cartilha do DETRAN-DF sobre respeito no trânsito "
+        android:layout_marginTop="550dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/purple_500"/>
+
+</RelativeLayout>

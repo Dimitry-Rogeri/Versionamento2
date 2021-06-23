@@ -10,6 +10,9 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -18,18 +21,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pedal360">
-        <activity
-            android:name=".perfil.Teste"
-            android:label="@string/title_activity_teste"
-            android:theme="@style/Theme.Pedal360.NoActionBar"></activity>
-        <activity android:name=".perfil.Chat" />
-        <activity
-            android:name=".perfil.Gallery"
-            android:label="@string/title_activity_gallery"
-            android:theme="@style/Theme.Pedal360.NoActionBar" />
-        <activity android:name=".Produtores" />
-        <activity android:name=".alertaslocation.ActivityLocate" />
-        <activity android:name=".perfil.ActivityPerfil" />
+        <activity android:name=".fragments.ActivityCartilha"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -43,8 +35,25 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".alertaslocation.ActivityMaps"
-            android:label="@string/title_activity_maps" />
+            android:name=".fragments.marker.EditMarker"
+            android:label="@string/title_activity_edit_marker" />
+        <activity android:name=".fragments.perfil.ActivityPosts" />
+        <activity android:name=".alertaslocation.teste" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".fragments.perfil.ActivityProfile"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".perfil.Gallery"
+            android:label="@string/title_activity_gallery"
+            android:theme="@style/Theme.Pedal360.NoActionBar" />
+        <activity android:name=".Produtores" />
+        <activity android:name=".alertaslocation.ActivityLocate" />
+        <activity android:name=".perfil.ActivityPerfil" />
+        <activity android:name=".fragments.alertas.ActivityAlertas" />
+        <activity android:name=".fragments.perfil.ActivityMaps">
+            android:label="@string/title_activity_maps"
+        </activity>
         <activity android:name=".ActivitySplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,7 +61,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".alertaslocation.ActivityAlertas" />
         <activity android:name=".ActivityPrincipal" />
         <activity android:name=".ActivityLogin" />
         <activity android:name=".ActivityRegister" />

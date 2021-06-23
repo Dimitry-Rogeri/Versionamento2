@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Perfil"
+        android:icon="@drawable/ic_person"
+        app:showAsAction="always"
+        android:id="@+id/profile_bottom"/>
+
+    <item android:title="Alertas"
+        android:icon="@drawable/ic_baseline_add_alert_24"
+        app:showAsAction="always"
+        android:id="@+id/alertas_bottom"/>
+
+    <item android:title="Eventos"
+        android:icon="@drawable/ic_events"
+        app:showAsAction="always"
+        android:id="@+id/eventos_bottom"/>
+
+    <item android:title="Marcador"
+        android:icon="@drawable/ic_timer"
+        app:showAsAction="always"
+        android:id="@+id/marcador_bottom"/>
+
+    <item android:title="Mapas"
+        android:icon="@drawable/ic_baseline_map_24"
+        app:showAsAction="always"
+        android:id="@+id/mapas_bottom"/>
+
+</menu>
